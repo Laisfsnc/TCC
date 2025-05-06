@@ -1,0 +1,32 @@
+<form id="formAluno">
+    <h3>Avaliar / Editar Aluno</h3>
+    <input type="hidden" id="alunoId" />
+    <label for="nomeAluno">Nome do Aluno</label>
+    <input type="text" id="nomeAluno" placeholder="Nome do aluno" required/>
+    <label for="notaAluno">Nota (0 a 10)</label>
+    <input type="number" id="notaAluno" min="0" max="10" step="0.1" required/>
+    <label for="qualitativaAluno">Avaliação Qualitativa</label>
+    <select id="qualitativaAluno" required>
+      <option value="" disabled>Selecione</option>
+      <option value="2">Excelente</option>
+      <option value="1.5">Bom</option>
+      <option value="1">Regular</option>
+      <option value="0.5">Ruim</option>
+      <option value="0">Insuficiente</option>
+    </select>
+    <label for="comportamentoAluno">Comportamento</label>
+    <select id="comportamentoAluno" required>
+      <option value="" disabled>Selecione</option>
+      <option value="2">Excelente</option>
+      <option value="1.5">Bom</option>
+      <option value="1">Regular</option>
+      <option value="0.5">Ruim</option>
+      <option value="0">Insuficiente</option>
+    </select>
+    <button type="submit">Salvar Avaliação</button>
+  </form>
+  <div class="canvas-container" id="graficoContainer">
+    <canvas id="radarChart" width="350" height="350"></canvas>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
